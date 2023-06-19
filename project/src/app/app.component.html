@@ -9,8 +9,8 @@
 <body>
     <div id="slide" style="margin-top: 115px;">
         <a href="">Home</a>
-        <a href="" onclick="funcOpen(0)">Hotels</a>
-        <a href="" onclick="funcOpen(1)">Restaurants</a>
+        <a href="" (click)="funcOpen(0)">Hotels</a>
+        <a href="" (click)="funcOpen(1)">Restaurants</a>
         <a href="Trips.html">Tours</a>
         <a href="https://travel.usnews.com/rankings/worlds-best-vacations/">Destinations</a>
         <a href="Activities.html">Activities</a>
@@ -18,15 +18,15 @@
     </div>
     <header>
         <img src="./assets/images/logo1.png" alt="" class="logo">
-        <button id="btn_nav" onclick="ShowHide()">
+        <button id="btn_nav" (click)="ShowHide()">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="color: white; margin-left: 0px;" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
         </button>
         <nav>
             <a href="" style="color: white;">Home</a>
-            <a href="" onclick="funcOpen(0)">Hotels</a>
-            <a href="" onclick="funcOpen(1)">Restaurants</a>
+            <a href="" (click)="funcOpen(0)">Hotels</a>
+            <a href="" (click)="funcOpen(1)">Restaurants</a>
             <a href="Trips.html">Tours</a>
             <a href="https://travel.usnews.com/rankings/worlds-best-vacations/">Destinations</a>
             <a href="Activities.html">Activities</a>
@@ -69,7 +69,7 @@
                     <option value="Surfing">Surfing</option>
                     <option value="Snowmobile Racing">Snowmobile Racing</option>
                 </select>
-                <button onclick="filter()">
+                <button (click)="filter()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" style="color: white" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                     </svg>
@@ -132,7 +132,7 @@
     </section>
 
     <h2 class="sec_h2">Hotels and Restaurants</h2>
-    <button onclick="func2(0)" id="btn_hotel">
+    <button (click)="func2(0)" id="btn_hotel">
         View all
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="float: right" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -202,7 +202,7 @@
     </section>
     
     <h2 class="sec_h2">Travel Trips and Advices</h2>
-    <button onclick="func2(1)" id="btn_travel">
+    <button (click)="func2(1)" id="btn_travel">
         View all
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="float: right" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -263,7 +263,7 @@
     </section>
 
     <h2  class="sec_h2">Activities</h2>
-    <button onclick="func2(2)" id="btn_active">
+    <button (click)="func2(2)" id="btn_active">
         View all
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="float: right" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
