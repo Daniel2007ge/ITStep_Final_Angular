@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = '2rism';
   funcOpen (e:number) {
     if (e == 0) {
       localStorage.setItem("type", "hotel")

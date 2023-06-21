@@ -9,8 +9,8 @@
 <body>
     <div id="slide" style="margin-top: 115px;">
         <a href="">Home</a>
-        <a href="" (click)="funcOpen(0)">Hotels</a>
-        <a href="" (click)="funcOpen(1)">Restaurants</a>
+        <a href="" (click)="funcOpen(0)" [routerLink]="['hotels']">Hotels</a>
+        <a href="" (click)="funcOpen(1)" [routerLink]="['hotels']">Restaurants</a>
         <a href="Trips.html">Tours</a>
         <a href="https://travel.usnews.com/rankings/worlds-best-vacations/">Destinations</a>
         <a href="Activities.html">Activities</a>
@@ -25,8 +25,8 @@
         </button>
         <nav>
             <a href="" style="color: white;">Home</a>
-            <a href="" (click)="funcOpen(0)">Hotels</a>
-            <a href="" (click)="funcOpen(1)">Restaurants</a>
+            <a href="" (click)="funcOpen(0)" [routerLink]="['hotels']">Hotels</a>
+            <a href="" (click)="funcOpen(1)" [routerLink]="['hotels']">Restaurants</a>
             <a href="Trips.html">Tours</a>
             <a href="https://travel.usnews.com/rankings/worlds-best-vacations/">Destinations</a>
             <a href="Activities.html">Activities</a>
@@ -371,6 +371,7 @@
                 </a>
             </button>
         </div>
-    </footer>
+    </footer>    
 </body>
 </html>
+<router-outlet></router-outlet>
