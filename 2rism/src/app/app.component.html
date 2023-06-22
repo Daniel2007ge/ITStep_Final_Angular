@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2rism</title>
-</head>
-<body>
+<!-- <div id="container">
+  <body>
     <div id="slide" style="margin-top: 115px;">
         <a href="">Home</a>
         <a href="" (click)="funcOpen(0)" [routerLink]="['hotels']">Hotels</a>
@@ -24,9 +17,9 @@
             </svg>
         </button>
         <nav>
-            <a href="" style="color: white;">Home</a>
-            <a href="" (click)="funcOpen(0)" [routerLink]="['hotels']">Hotels</a>
-            <a href="" (click)="funcOpen(1)" [routerLink]="['hotels']">Restaurants</a>
+            <a href="/home" style="color: white;">Home</a>
+            <a href="/hotels" (click)="funcOpen(0)" >Hotels</a>
+            <a href="/hotels" (click)="funcOpen(1)" >Restaurants</a>
             <a href="Trips.html">Tours</a>
             <a href="https://travel.usnews.com/rankings/worlds-best-vacations/">Destinations</a>
             <a href="Activities.html">Activities</a>
@@ -41,7 +34,7 @@
                 </svg>
                 <b><a style="color: white;" href="https://earth.google.com/web/@23.53726308,33.58880095,1394.60710182a,15110537.88471938d,34.95404553y,0h,0t,0r">Discover on 3D Globe</a></b>
             </button>
-
+  
             <div id="search">
                 <svg xmlns="http://www.w3.org/2000/svg"width="25" height="25" style="float: left; margin-left: 10px; margin-top: 15px; color: #FFA800;" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
                     <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022ZM6 8.694 1 10.36V15h5V8.694ZM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15Z"/>
@@ -75,12 +68,12 @@
                     </svg>
                 </button>
             </div>
-
+  
         </div>
     </header>
-
+  
     <h2>Popular Destinations</h2>
-
+  
     <section id="section_1">
         <div>
             <figure class="fig_1">
@@ -89,7 +82,7 @@
                 <footer>California, USA</footer>
             </figure>
         </div>
-
+  
         <div>
             <figure class="fig_1">
                 <img src="https://www.swisslife.ch/content/internet/ch/en/private/blog/auszeit-vom-job/jcr:content/moodimagearticle/image.1554993055151.transform/16_9_1240w/bild_sabbatical.jpg" alt="">
@@ -97,7 +90,7 @@
                 <footer>Arizona, USA</footer>
             </figure>
         </div>
-
+  
         <div>
             <figure class="fig_1">
                 <img src="https://www.floridavacationhomes.com/wp-content/uploads/2019/12/Space-Coast-Vacation-1.jpg" alt="">
@@ -105,7 +98,7 @@
                 <footer>Florida, USA</footer>
             </figure>
         </div>
-
+  
         <div>
             <figure class="fig_1">
                 <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvuqSpFTwC7wuTqRuE_nfc3YP8GTJ7wLUtL1LlF6i9lcl6KsET" alt="">
@@ -113,7 +106,7 @@
                 <footer>Arizona, USA</footer>
             </figure>
         </div>
-
+  
         <div>
             <figure class="fig_1">
                 <img src="https://static.wixstatic.com/media/nsplsh_9a5794ba9bea4a2c90d49644e138d720~mv2.jpg/v1/fill/w_740,h_493,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/nsplsh_9a5794ba9bea4a2c90d49644e138d720~mv2.jpg" alt="">
@@ -121,7 +114,7 @@
                 <footer>Michigan, USA</footer>
             </figure>
         </div>
-
+  
         <div>
             <figure class="fig_1">
                 <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEzlxZB-3xe8LT2sOzu1nWtDe0YOr-9DqMamhgrpsguepvjmNL" alt="">
@@ -130,7 +123,7 @@
             </figure>
         </div>
     </section>
-
+  
     <h2 class="sec_h2">Hotels and Restaurants</h2>
     <button (click)="func2(0)" id="btn_hotel">
         View all
@@ -138,7 +131,7 @@
             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
         </svg>
     </button>
-
+  
     <section id="section_2">
         <div>
             <figure class="fig_2">
@@ -154,7 +147,7 @@
                 </footer>
             </figure>
         </div>
-
+  
         <div>
             <figure class="fig_2">
                 <img src="./assets/images/hotels and restaurants/hotel2.png" alt="">
@@ -169,7 +162,7 @@
                 </footer>
             </figure>
         </div>
-
+  
         <div>
             <figure class="fig_2">
                 <img src="./assets/images/hotels and restaurants/hotel3.png" alt="">
@@ -184,7 +177,7 @@
                 </footer>
             </figure>
         </div>
-
+  
         <div>
             <figure class="fig_2">
                 <img src="./assets/images/hotels and restaurants/hotel4.png" alt="">
@@ -208,7 +201,7 @@
             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
         </svg>
     </button>
-
+  
     <section id="section_3">
         <figure class="fig_3">
             <img src="./assets/images/trip places/place1.png" alt="">
@@ -235,7 +228,7 @@
                 </footer>
             </div>
         </figure>
-
+  
         <figure class="fig_3">
             <img src="./assets/images/trip places/place2.png" alt="">
             <div>
@@ -261,7 +254,7 @@
             </div>
         </figure>
     </section>
-
+  
     <h2  class="sec_h2">Activities</h2>
     <button (click)="func2(2)" id="btn_active">
         View all
@@ -269,29 +262,29 @@
             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
         </svg>
     </button>
-
+  
     <section id="section_4">
         <figure class="fig_4">
             <img src="./assets/images/activities/1.png" alt="">
             <figcaption style="margin-top: 15px;"><b>Sailing</b></figcaption>
         </figure>
-
+  
         <figure class="fig_4">
             <img src="./assets/images/activities/2.png" alt="">
             <figcaption style="margin-top: 15px;"><b>Climbing</b></figcaption>
         </figure>
-
+  
         <figure class="fig_4">
             <img src="./assets/images/activities/3.png" alt="">
             <figcaption style="margin-top: 15px;"><b>Skiing</b></figcaption>
         </figure>
-
+  
         <figure class="fig_4">
             <img src="./assets/images/activities/4.png" alt="">
             <figcaption style="margin-top: 15px;"><b>Hiking</b></figcaption>
         </figure>
     </section>
-
+  
     <section id="section_5">
         <figure class="fig_5" style="margin-top: 100px;">
             <img src="./assets/images/we.png" alt="">
@@ -313,7 +306,7 @@
             </div>
         </figure>
     </section>
-
+  
     <footer id="footer">
         <div style="color: #5B5B5B;">
             <img src="./assets/images/logo2.png" alt="" class="logo" style="margin-left: 0px;"><br><br><br>
@@ -372,6 +365,9 @@
             </button>
         </div>
     </footer>    
-</body>
-</html>
-<router-outlet></router-outlet>
+  </body>
+</div>
+
+<router-outlet></router-outlet> -->
+
+<app-home></app-home>
