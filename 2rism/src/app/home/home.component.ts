@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  funcOpen (e:number) {
+  funcOpen1 (e:number) {
     if (e == 0) {
       localStorage.setItem("type", "hotel")
     } else {
@@ -21,7 +21,10 @@ export class HomeComponent {
       box_home.style.display = "none"
     }
   }
+
+
+  
+  funcOpen2 (e:number) {}
   ShowHide () {}
   filter () {}
-  func2 (index:number) {}
 }

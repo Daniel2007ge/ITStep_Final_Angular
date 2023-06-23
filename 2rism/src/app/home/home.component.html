@@ -2,12 +2,12 @@
     <div id="container-home">
         <div id="slide" style="margin-top: 115px;">
             <a href="">Home</a>
-            <a href="" (click)="funcOpen(0)" [routerLink]="['hotels']">Hotels</a>
-            <a href="" (click)="funcOpen(1)" [routerLink]="['hotels']">Restaurants</a>
-            <a href="Trips.html">Tours</a>
-            <a href="https://travel.usnews.com/rankings/worlds-best-vacations/">Destinations</a>
-            <a href="Activities.html">Activities</a>
-            <a href="Contact.html">Contact</a>
+            <a href="" [routerLink]="['hotels']" (click)="funcOpen1(0)">Hotels</a>
+            <a href="" [routerLink]="['hotels']" (click)="funcOpen1(1)">Restaurants</a>
+            <a href="" [routerLink]="['tours']" (click)="funcOpen2(0)">Tours</a>
+            <a href="" [routerLink]="['destinations']" (click)="funcOpen2(1)">Destinations</a>
+            <a href="" [routerLink]="['activities']" (click)="funcOpen2(2)">Activities</a>
+            <a href="" [routerLink]="['contact']" (click)="funcOpen2(3)">Contact</a>
         </div>
         <header>
             <img src="./assets/images/logo1.png" alt="" class="logo">
@@ -17,14 +17,14 @@
                 </svg>
             </button>
             <nav>
-                <a href="/home" style="color: white;">Home</a>
-                <a href="" [routerLink]="['hotels']" (click)="funcOpen(0)">Hotels</a>
-                <a href="" [routerLink]="['hotels']" (click)="funcOpen(1)">Restaurants</a>
-                <a href="Trips.html">Tours</a>
-                <a href="https://travel.usnews.com/rankings/worlds-best-vacations/">Destinations</a>
-                <a href="Activities.html">Activities</a>
-                <a href="Contact.html">Contact</a>
-                <a href="registration.html" id="join">login / signup</a>
+                <a href="" style="color: white;">Home</a>
+                <a href="" [routerLink]="['hotels']" (click)="funcOpen1(0)">Hotels</a>
+                <a href="" [routerLink]="['hotels']" (click)="funcOpen1(1)">Restaurants</a>
+                <a href="" [routerLink]="['tours']" (click)="funcOpen2(0)">Tours</a>
+                <a href="" [routerLink]="['destinations']" (click)="funcOpen2(1)">Destinations</a>
+                <a href="" [routerLink]="['activities']" (click)="funcOpen2(2)">Activities</a>
+                <a href="" [routerLink]="['contact']" (click)="funcOpen2(3)">Contact</a>
+                <a href="" id="join" [routerLink]="['registration']" (click)="funcOpen2(4)">login / signup</a>
             </nav>
             <div>
                 <h1>Discover the most engaging places</h1>            
@@ -125,7 +125,7 @@
         </section>
     
         <h2 class="sec_h2">Hotels and Restaurants</h2>
-        <button (click)="func2(0)" id="btn_hotel">
+        <button [routerLink]="['hotels']" (click)="funcOpen1(0)" id="btn_hotel">
             View all
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="float: right" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -195,7 +195,7 @@
         </section>
         
         <h2 class="sec_h2">Travel Trips and Advices</h2>
-        <button (click)="func2(1)" id="btn_travel">
+        <button  [routerLink]="['tours']" (click)="funcOpen2(0)" id="btn_travel">
             View all
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="float: right" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -256,7 +256,7 @@
         </section>
     
         <h2  class="sec_h2">Activities</h2>
-        <button (click)="func2(2)" id="btn_active">
+        <button [routerLink]="['activities']" (click)="funcOpen2(2)" id="btn_active">
             View all
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="float: right" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -296,7 +296,7 @@
                     ultrices. Class aptent taciti sociosqu ad litora torquent per conubia <br>
                     nostra, per inceptos himenaeos.<br>
                     <button>
-                        <a href="About_Us.html" style="color: #5243C2;">
+                        <a style="color: #5243C2;">
                             Read more
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="float: right" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -357,7 +357,7 @@
                 </svg>
                 <input type="email" placeholder="johndoe@gmail.com" id="input">
                 <button id="btn_2">
-                    <a href="registration.html">
+                    <a [routerLink]="['registration']" (click)="funcOpen2(4)">
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" style="color: white;" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                         </svg>
