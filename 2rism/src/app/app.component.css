@@ -1,0 +1,74 @@
+header{
+    background-color: black;
+    margin: -8px;
+    font-family: "Malgun Gothic";
+}
+
+#slide, #slide>a{
+    display: none;
+}
+
+.logo{
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 70px;
+    float: left;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    padding: 20px 0px;
+    font-size: 15px;
+    text-decoration: underline;    
+    text-underline-offset: -30px;  
+    text-decoration-color: rgba(0, 0, 0, 0);
+    min-width: 100px;
+    width: 140px;
+    color: gray;
+    transition: all 1s ease;
+}
+
+nav>a:hover{
+    text-underline-offset: 20px;
+    text-decoration-color: white;
+    transition: all 1s ease;
+}
+
+#join{
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    width: 120px;
+    height: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+#join:hover{
+    border-radius: 0px;
+    box-shadow: 0 0 15px white inset;
+    transition: all 0.5s ease;
+}
+
+#btn_nav{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: none;
+}
+
+#btn_nav:hover{
+    box-shadow: 0 0 10px 1px white;
+}
