@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '2rism';
+  funcOpen1 (e:number) {}
+
+
+  
+  funcOpen2 (e:number) {}
+  ShowHide () {}
+  filter () {}
 }
