@@ -6,10 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  funcOpen1 (e:number) {}
-
-
-  
+  funcOpen1 (e:number) {}  
   funcOpen2 (e:number) {}
   ShowHide () {}
   filter () {}

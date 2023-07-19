@@ -9,20 +9,20 @@
         <a href="" [routerLink]="['contact']">Contact</a>
     </div>
 
-    <img src="images/logo1.png" alt="" class="logo">
+    <img src="./assets/images/logo1.png" alt="" class="logo">
     <button id="btn_nav" (click)="ShowHide()">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="color: white; margin-left: 0px;" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
         </svg>
     </button>
     <nav>
-        <a href="" [routerLink]="['home']" >Home</a>
-        <a href="" [routerLink]="['hotels']">Hotels</a>
-        <a href="" [routerLink]="['hotels']">Restaurants</a>
-        <a href="" [routerLink]="['tours']">Tours</a>
-        <a href="" [routerLink]="['destinations']">Destinations</a>
-        <a href="" [routerLink]="['activities']">Activities</a>
-        <a href="" [routerLink]="['contact']">Contact</a>
+        <a href="" [routerLink]="['home']" (click)="LinkClick(0)" style="color: white;">Home</a>
+        <a href="" [routerLink]="['hotels']" (click)="LinkClick(1)">Hotels</a>
+        <a href="" [routerLink]="['hotels']" (click)="LinkClick(2)">Restaurants</a>
+        <a href="" [routerLink]="['tours']" (click)="LinkClick(3)">Tours</a>
+        <a href="" [routerLink]="['destinations']" (click)="LinkClick(4)">Destinations</a>
+        <a href="" [routerLink]="['activities']" (click)="LinkClick(5)">Activities</a>
+        <a href="" [routerLink]="['contact']" (click)="LinkClick(6)">Contact</a>
         <a href="" [routerLink]="['registration']" id="join">login / signup</a>
     </nav>
 </header>

@@ -13,49 +13,49 @@ header{
     height: auto;
     margin-top: 10px;
     margin-left: 30px;
-    margin-right: 70px;
     float: left;
 }
 
 nav{
     display: flex;
     justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-a{
-    padding: 20px 0px;
+nav>a{
+    padding: 10px 0px;
+    margin: 0px 10px;
     font-size: 15px;
-    text-decoration: underline;    
-    text-underline-offset: -30px;  
-    text-decoration-color: rgba(0, 0, 0, 0);
     min-width: 100px;
-    width: 140px;
+    width: 120px;
     color: gray;
-    transition: all 1s ease;
+    text-decoration: none;
+    text-align: center;    
+    border: 1px solid black;
+    transition: all 0.75s ease;
 }
 
 nav>a:hover{
-    text-underline-offset: 20px;
-    text-decoration-color: white;
-    transition: all 1s ease;
+    border: 1px solid white;
+    color: white;
 }
 
 #join{
     border: 1px solid white;
-    border-radius: 10px;
     color: white;
     width: 120px;
-    height: 10px;
-    margin-top: 10px;
-    padding-top: 10px;
+    height: 20px;
+    margin-left: 50px;
+    margin-right: -40px;
+    text-align: center;
     text-decoration: none;
     transition: all 0.5s ease;
 }
 
 #join:hover{
-    border-radius: 0px;
+    border-radius: 10px;
     box-shadow: 0 0 15px white inset;
-    transition: all 0.5s ease;
 }
 
 #btn_nav{
