@@ -1,10 +1,6 @@
-/* body{
-    margin: 0px;
+body{
+    margin: -8px;
     font-family: "Malgun Gothic";
-}
-
-#slide, #slide>a{
-    display: none;
 }
 
 header{
@@ -21,7 +17,11 @@ header{
 
 header>div{
     width: 100%;
-    margin: 90px auto;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+    padding-top: 90px;
     text-align: center;
 }
 
@@ -34,15 +34,10 @@ header>div{
     float: left;
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-}
-
 a{
     padding: 20px 0px;
     font-size: 15px;
-    text-decoration: underline;    
+    text-decoration: underline;
     text-underline-offset: -30px;  
     text-decoration-color: rgba(0, 0, 0, 0);
     min-width: 100px;
@@ -51,66 +46,9 @@ a{
     transition: all 1s ease;
 }
 
-nav>a:hover{
-    text-underline-offset: 20px;
-    text-decoration-color: white;
-    transition: all 1s ease;
-}
-
-#join{
-    border: 1px solid white;
-    border-radius: 10px;
-    color: white;
-    width: 120px;
-    height: 10px;
-    margin-top: 10px;
-    padding-top: 10px;
-    text-decoration: none;
-    transition: all 0.5s ease;
-}
-
-#join:hover{
-    border-radius: 0px;
-    box-shadow: 0 0 15px white inset;
-    transition: all 0.5s ease;
-}
-
-#User{
-    border: 1px solid white;
-    border-radius: 100%;
-    padding: 0px;
-    width: 60px;
-    height: 60px;
-    color: white;
-    line-height: 55px;
-    margin-top: 5px;
-    overflow: hidden;
-    transition: all 0.5s ease;
-}
-
-#User:hover{
-    box-shadow: 0 0 15px white inset;
-    transition: all 0.5s ease;
-}
-
-#btn_nav{
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: 1px solid white;
-    float: left;
-    margin-left: 20px;
-    margin-top: 10px;
-
-    display: none;
-}
-
-#btn_nav:hover{
-    box-shadow: 0 0 10px 1px white;
-}
-
 h1{
     color: white;
+    margin-top: 0px;
     margin-bottom: 5px;
     font-size: 40px;
 }
@@ -164,6 +102,8 @@ input{
     width: 50px;
     height: 50px;
     background-color: #5243C2;
+    border: none;
+    border-radius: 10px;
     margin-top: 5px;
     margin-right: 5px;
 }
@@ -395,7 +335,7 @@ html::-webkit-scrollbar-thumb{
     border-radius: 10px;
     background: linear-gradient(180deg, #1606f0, #00c6fb);
 }
-
+/* 
 @media screen and (max-width: 1330px){
     #footer>div:last-child{
         display: none;

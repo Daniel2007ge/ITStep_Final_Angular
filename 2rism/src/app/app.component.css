@@ -56,6 +56,7 @@ nav>a:hover{
 #join:hover{
     border-radius: 10px;
     box-shadow: 0 0 15px white inset;
+    background-color: #5243c2;
 }
 
 #btn_nav{

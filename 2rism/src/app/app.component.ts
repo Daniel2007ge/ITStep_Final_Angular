@@ -16,11 +16,5 @@ export class AppComponent {
     navChildren[e].setAttribute("style", "color: white");
   }
 
-
-
-
-  funcOpen1 (e:number) {}  
-  funcOpen2 (e:number) {}
   ShowHide () {}
-  filter () {}
 }
