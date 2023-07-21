@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./hotels.component.css']
 })
 export class HotelsComponent {
-  funcOpen (e:number) {}
+  filter() {}
+
+
+  figure:Element = document.createElement("figure")
+  
+
 }
