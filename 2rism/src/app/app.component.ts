@@ -16,5 +16,15 @@ export class AppComponent {
     navChildren[e].setAttribute("style", "color: white");
   }
 
+  funcOpen(e: number){
+    if (e == 0) {
+        localStorage.setItem("type", "hotel")
+    } else {
+        localStorage.setItem("type", "restaurant")
+    }
+    localStorage.setItem("place", "")
+    localStorage.setItem("active", "")
+  }
+
   ShowHide () {}
 }

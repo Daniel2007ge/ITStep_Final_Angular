@@ -1,0 +1,115 @@
+#search{
+    width: 650px;
+    height: 60px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+select{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    height: 30px;
+    border: 1px solid #5243C2;
+    border-radius: 10px;
+}
+
+input{
+    float: left;
+    margin-top: 15px;
+    height: 26px;
+    border: 1px solid #5243C2;
+    border-radius: 10px;
+}
+
+input :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+::placeholder{
+    font-size: 14px;
+    color: black;
+}
+
+#search>img{
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+#search>button{
+    width: 40px;
+    height: 40px;
+    background-color: #5243C2;
+    border: none;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+}
+
+div{
+    width: 88vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-family: "Malgun Gothic";
+}
+
+figure{
+    float: left;
+    margin: 20px;
+    justify-content: center;
+}
+
+figure>img{
+    width: 260px;
+    height: 323px;
+    border-radius: 10px;
+}
+
+figure>figcaption{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+figure>footer{
+    color: #979797;
+    margin-top: 10px;
+}
+
+.stars{
+    margin-top: 10px;
+    height: 15px;
+}
+
+footer>svg{
+    padding-right: 5px;
+}
+
+footer>button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    color: #5243C2;
+    background-color: #F6F4FF;
+    font-size: 15px;
+    margin: 0px;
+    float: right;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    box-shadow: 0 0 10px 1px #5243C2;
+}
+
+h1{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 38px;
+    color: #7B61FF;
+}
