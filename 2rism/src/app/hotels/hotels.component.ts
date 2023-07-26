@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
     styleUrls: ['./hotels.component.css']
 })
 export class HotelsComponent {
-    filter() {}
-
     Hotels_And_Restaurants:any[] = [
         {
             id: "0",
@@ -319,6 +317,38 @@ export class HotelsComponent {
     func1 (e:any) {
         // document.getElementById("new_input")?.setAttribute("value", e)
     }
-  
+    
+    H_R:any[]=[]
+
+    filter() {
+        this.H_R=[]
+
+        localStorage.setItem("type", document.getElementsByTagName("select")[0].value)
+        localStorage.setItem("place", document.getElementsByTagName("input")[0].value)
+        localStorage.setItem("active", document.getElementsByTagName("select")[1].value)
+
+        this.type = localStorage.getItem("type")
+        this.place = localStorage.getItem("place")
+        this.active = localStorage.getItem("active")
+
+        if ((this.type == "") && (this.place == "")){
+            for (let index = 0; index < this.Hotels_And_Restaurants.length; index++) {
+                
+                this.H_R.push(this.Hotels_And_Restaurants[index])
+            
+            }
+        }else {
+            for (let index = 0; index < this.Hotels_And_Restaurants.length; index++) {
+                if ((this.Hotels_And_Restaurants[index].role == this.type || this.type == "") && 
+                    (this.Hotels_And_Restaurants[index].city == this.place || this.Hotels_And_Restaurants[index].country == this.place || this.place == "") && 
+                    (this.Hotels_And_Restaurants[index].activity == this.active || this.active == "")) {
+
+                    this.H_R.push(this.Hotels_And_Restaurants[index])
+
+                }
+            }
+        }
+        
+    }
 
 }
